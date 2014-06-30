@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.row {
+  overflow: hidden;
+  margin: 10px auto;
+  width: 900px;
+}
+.row .card {
+  width: 50px;
+  height: 50px;
+  padding: 4px;
+  text-align: center;
+  border: 1px solid black;
+  float: left;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+.row .taken {
+  width: 50px;
+  height: 50px;
+  padding: 4px;
+  text-align: center;
+  border: 1px solid white;
+  float: left;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+.row .card.face-down {
+  background-color: #3149FF;
+}
+.row .card.face-down span {
+  display: none;
+}
+.row .card.face-up {
+  background-color: white;
+}
+.row .card.face-up span {
+  display: inline;
+}
+.row .card:first-child {
+  margin-left: 0;
+}
